@@ -22,14 +22,12 @@ function classificacaoImc(imc) {
   }
 
 }
-
-function main() {
+// funcao autoexecutavel - funcao nao nomeada
+(function () {
   const peso = 60;
   const altura = 1.53;
 
   const imc =  calcularImc(peso, altura);
   console.log(classificacaoImc(imc));
 
-}
-
-main();
+})();
